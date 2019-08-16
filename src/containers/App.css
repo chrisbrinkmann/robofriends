@@ -1,0 +1,23 @@
+/*
+The @font-face rule allows custom fonts to be loaded on a webpage.
+Once added to a stylesheet, the rule instructs
+the browser to download the font from where it is hosted,
+then display it as specified in the CSS.
+
+Without the rule, our designs are limited
+to the fonts that are already loaded on a user's computer,
+which vary depending on the system being used.
+*/
+
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+h1 {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: #0ccac4;
+};
